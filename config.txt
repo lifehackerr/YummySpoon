@@ -1,0 +1,47 @@
+const config = [
+    {
+        type: "carousel",
+        cards:[
+            {
+                offerName: "50% off",
+            },
+            {
+                offerName: "Free delivery",
+            }
+        ]
+    },
+    {
+        type: "restaurants",
+        cards:[
+            {
+                id : 1,
+                name :"Burger King",
+                image : burgerkingimg,
+                cousins : ["Burgers", "Americans"],
+                stars: "4.2"
+            },
+            {
+                id : 2,
+                name :"KFC",
+                image : kfcimg,
+                cousins : ["Chicken", "Italian"],
+                stars: "4.5"
+            },
+            {
+                id : 3,
+                name :"Dominos",
+                image : dominosimg,
+                cousins : ["Pizza", "Indian"],
+                stars: "4.3"
+            },
+            {
+                id : 4,
+                name :"rolls king",
+                image : rollkingimg,
+                cousins : ["Rolls", "Chinese"],
+                stars: "4.1"
+            },
+        ]
+    }
+]
+
