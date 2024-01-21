@@ -1,7 +1,7 @@
 import { useContext } from "react"
-import UserContext from "../utils/userContext"
+import userContext from "../utils/userContext"
 const RestaurantCards = ({image,name,cousins,stars}) =>{
-    const {user} = useContext(UserContext);
+    const {user} = useContext(userContext);
     //const {image,name,cousins,stars} = restaurant; // object des
     return(
         <div className="w-52 p-2 m-2 shadow-lg bg-pink-100">

@@ -15,19 +15,19 @@ export const data = [
         menu : [
             {
                 id: 11,
-                itemname: "simple Burger",
+                items: "simple Burger",
                 Description : "zero wheat burger"
 
             },
             {
                 id: 12,
-                itemname: "Cheese Burger",
+                items: "Cheese Burger",
                 Description : "zero wheat burger with cheese"
 
             },
             {
                 id: 13,
-                itemname: "Double petty cheese Burger",
+                items: "Double petty cheese Burger",
                 Description : "zero wheat burger with extra cheese and patty"
 
             }
@@ -41,19 +41,19 @@ export const data = [
         menu : [
             {
                 id: 21,
-                itemname: "simple chicken",
+                items: "simple chicken",
                 Description : "freshly roasted chicken"
 
             },
             {
                 id: 22,
-                itemname: "Cheesey chicken Burger",
+                items: "Cheesey chicken Burger",
                 Description : "chicken burger with extra cheese"
 
             },
             {
                 id: 23,
-                itemname: "Double petty chicken cheese Burger",
+                items: "Double petty chicken cheese Burger",
                 Description : "chicken burger with extra cheese and patty"
 
             }
@@ -68,18 +68,18 @@ export const data = [
         menu : [
             {
                 id: 31,
-                itemname: "simple Pizza",
+                items: "simple Pizza",
                 Description : "zero wheat Pizza with onion"
 
             },
             {
                 id: 32,
-                itemname: "Farm House Pizza",
+                items: "Farm House Pizza",
                 Description : "pizza loaded with vegies"
             },
             {
                 id: 33,
-                itemname: "Double Panner pizza",
+                items: "Double Panner pizza",
                 Description : "zero wheat pizza with extra cheese, paneer and vegies "
 
             }
@@ -94,19 +94,19 @@ export const data = [
         menu : [
             {
                 id: 41,
-                itemname: "simple roll",
+                items: "simple roll",
                 Description : "zero wheat roll with extra cheese"
 
             },
             {
                 id: 42,
-                itemname: "Cheese roll",
+                items: "Cheese roll",
                 Description : "zero wheat burger with cheese"
 
             },
             {
                 id: 43,
-                itemname: "Double petty cheese roll",
+                items: "Double petty cheese roll",
                 Description : "zero wheat roll with extra cheese and patty"
 
             }
@@ -121,19 +121,19 @@ export const data = [
         menu : [
             {
                 id: 51,
-                itemname: "simple puff",
+                items: "simple puff",
                 Description : "zero wheat puff"
 
             },
             {
                 id: 52,
-                itemname: "Cheese puff",
+                items: "Cheese puff",
                 Description : "zero wheat puff with cheese and vegies"
 
             },
             {
                 id: 53,
-                itemname: "Double petty cheese puff",
+                items: "Double petty cheese puff",
                 Description : "zero wheat puff with extra cheese and patty"
 
             }
@@ -148,19 +148,19 @@ export const data = [
         menu : [
             {
                 id: 61,
-                itemname: "simple momos",
+                items: "simple momos",
                 Description : "zero wheat mnmos"
 
             },
             {
                 id: 62,
-                itemname: "Chicken momos",
+                items: "Chicken momos",
                 Description : "zero wheat momos filled with chicken"
 
             },
             {
                 id: 63,
-                itemname: "fried momos",
+                items: "fried momos",
                 Description : "deep fried momos in olive oil"
 
             }
@@ -175,19 +175,19 @@ export const data = [
       menu : [
         {
             id: 71,
-            itemname: "Dosa",
+            items: "Dosa",
             Description : "zero wheat dosa"
 
         },
         {
             id: 72,
-            itemname: "Cheese masala dosa",
+            items: "Cheese masala dosa",
             Description : "zero wheat dosa with cheese and veggies"
 
         },
         {
             id: 73,
-            itemname: "Double petty cheese Burger",
+            items: "Double petty cheese Burger",
             Description : "zero wheat burger with extra cheese and patty - haldiram"
 
         }

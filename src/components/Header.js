@@ -3,6 +3,7 @@ import { useEffect, useState ,useContext} from "react";
 import { Link } from "react-router-dom";
 import useOnline from "../utils/useOnline.js";
 import UserContext from "../utils/userContext.js";
+import { useSelector } from "react-redux";
 
 export const Title = () =>(
     <a href = "/">
@@ -15,6 +16,8 @@ const Header = () => {
     const [isLoggedIn, setLoggedIn] = useState(false);
     const isOnline = useOnline(true);
     const {user} = useContext(UserContext);
+    const cartItems = useSelector((store) => store.cart.items);
+    console.log(cartItems)
 
     useEffect(()=>{
         console.log("useEffect")
@@ -28,8 +31,8 @@ const Header = () => {
         <li className="px-2"> <Link to= "/">Home</Link></li>
         <li className="px-2"><Link to= "/About">About</Link></li>
         <li className="px-2"><Link to = "/Contact">Contact us</Link></li>
-        <li className="px-2">Cart</li>
         <li className="px-2"><Link to = "/Instamart">Instamart</Link></li>
+        <li className="px-2"><Link to = "/cart">Cart - {cartItems.length} Items</Link></li>
         </ul>
         </div>
         <h1 className=" p-10 text-red-600 py-10">

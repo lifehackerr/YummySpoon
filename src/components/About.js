@@ -2,6 +2,7 @@ import { Link, Outlet } from "react-router-dom";
 import ProfileClass from "./ProfileClass";
 import ProfileFunction from "./ProfileFunction";
 import React from "react";
+import UserContext from "../utils/userContext";
 
 class About extends React.Component {
     constructor(props){
@@ -17,6 +18,9 @@ class About extends React.Component {
         return (
             <div>
                 <Link to= "profile"><h1>About Me..</h1></Link>
+                <UserContext.Consumer>
+                    {({user})=> <h4>This is the alternative of useContect hook in class based component {user.name}</h4>}
+                </UserContext.Consumer>
                 <p>Hi we are trying to build a food delivery react app</p>
                 {/* <ProfileFunction name = {"DevFUn"}/> */}
                 <ProfileClass name = {"DevClass"}/>

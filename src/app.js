@@ -1,4 +1,4 @@
-import React, { lazy,Suspense } from "react";
+import React, { lazy,Suspense, useState } from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/Header.js" //default import
 import Body from "./components/Body.js";
@@ -9,8 +9,12 @@ import Error from "./components/Error.js";
 import Contact from "./components/Contact.js";
 import RestaurantMenu from "./components/RestaurantMenu.js";
 import Login from "./components/Login.js";
+import Cart from "./components/Cart.js";
 import ProfileClass from "./components/ProfileClass.js";
 import Shimmer from "./components/shimmer.js";
+import userContext from "./utils/userContext.js";
+import { Provider } from "react-redux";
+import store from "./utils/store.js";
 //config driver ui -- kind of ui which is handled by backend
 
 
@@ -23,14 +27,22 @@ import Shimmer from "./components/shimmer.js";
 
 const Instamart = lazy(()=> import ("./components/Instamart.js")); //lazy loading a component so that bundler make a different bundle for this.
 const AppLayout = () =>{
+    const [user, setUser] = useState({
+        name: "Omiii",
+        email : "omiii@gmail.com",
+    });
+
     return (
-        <>
+        <Provider store= {store}>
+            <userContext.Provider value = {{user :user}}>
             <Header/>
             <Outlet/>
-            <Footer/>
-        </>
+            </userContext.Provider>
+            <Footer/> 
+        </Provider>
     )
 }
+//useCOntect provider will provide the dynamic value and should be wrapper over the components we need to change the valuw
 
 const appRouter = Router([
     {
@@ -68,6 +80,10 @@ const appRouter = Router([
                 // suppose this instamart bundle takes few sec to load so
                 //in between we need to render some other componet, for that we use fallback function that returns a component and it will be rendered till the time bundle not loaded
             },
+            {
+                path : "/cart",
+                element : <Cart/>
+            }
         ],
     }, 
 ]);
